@@ -1,0 +1,10 @@
+spring:
+  ai:
+    azure:
+      openai:
+        api-key: ${AZURE_AI_KEY}
+        endpoint: "https://spring-io-azure-openai.openai.azure.com/"
+        chat:
+          options:
+            deployment-name: gpt-4o
+

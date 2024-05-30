@@ -1,0 +1,17 @@
+spring:
+  ai:
+    azure:
+      openai:
+        api-key: "${AzureAIkey}"
+        endpoint: "https://spring-io-azure-openai.openai.azure.com/"
+        chat:
+          options:
+            deployment-name: gpt-4o
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-sources:
+            - endpoint:  "https://spring-io-vault.vault.azure.net/"
+          credential:
+            managed-identity-enabled: true
